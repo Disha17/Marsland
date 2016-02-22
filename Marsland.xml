@@ -1,1 +1,78 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_right" id="10" x="266" y="69">
+    <next>
+      <block type="robot_delay" id="12" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="19">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <next>
+          <block type="movement_forward" id="29">
+            <next>
+              <block type="robot_delay" id="31" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="32">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stutter" id="42">
+                    <next>
+                      <block type="robot_delay" id="44" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="51">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_rightmotor" id="61" inline="true">
+                            <value name="MOVRIGHT">
+                              <block type="sensor_light" id="124">
+                                <field name="LIGHT">RIGHT</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="robot_delay" id="126" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="62">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_color" id="71">
+                                    <field name="OBJECT">BLACK</field>
+                                    <next>
+                                      <block type="movement_forward" id="136">
+                                        <next>
+                                          <block type="robot_delay" id="138" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="139">
+                                                <field name="NUM">1000</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_stop" id="149"></block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
