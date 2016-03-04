@@ -1,58 +1,58 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_right" id="10" x="266" y="69">
+  <block type="movement_right" id="1" x="266" y="69">
     <next>
-      <block type="robot_delay" id="12" inline="true">
+      <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="19">
+          <block type="math_number" id="3">
             <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="movement_forward" id="29">
+          <block type="movement_forward" id="4">
             <next>
-              <block type="robot_delay" id="31" inline="true">
+              <block type="robot_delay" id="5" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="32">
+                  <block type="math_number" id="6">
                     <field name="NUM">1000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stutter" id="42">
+                  <block type="movement_stutter" id="7">
                     <next>
-                      <block type="robot_delay" id="44" inline="true">
+                      <block type="robot_delay" id="8" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="51">
+                          <block type="math_number" id="9">
                             <field name="NUM">1000</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_rightmotor" id="61" inline="true">
+                          <block type="movement_rightmotor" id="10" inline="true">
                             <value name="MOVRIGHT">
-                              <block type="sensor_light" id="124">
+                              <block type="sensor_light" id="11">
                                 <field name="LIGHT">RIGHT</field>
                               </block>
                             </value>
                             <next>
-                              <block type="robot_delay" id="126" inline="true">
+                              <block type="robot_delay" id="12" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="62">
+                                  <block type="math_number" id="13">
                                     <field name="NUM">1000</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_color" id="71">
+                                  <block type="oled_color" id="14">
                                     <field name="OBJECT">BLACK</field>
                                     <next>
-                                      <block type="movement_forward" id="136">
+                                      <block type="movement_forward" id="15">
                                         <next>
-                                          <block type="robot_delay" id="138" inline="true">
+                                          <block type="robot_delay" id="16" inline="true">
                                             <value name="DELAY">
-                                              <block type="math_number" id="139">
+                                              <block type="math_number" id="17">
                                                 <field name="NUM">1000</field>
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="movement_stop" id="149"></block>
+                                              <block type="movement_stop" id="18"></block>
                                             </next>
                                           </block>
                                         </next>
