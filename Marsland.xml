@@ -1,24 +1,65 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="191" x="126" y="87">
+  <block type="movement_forward" id="1" x="126" y="87">
     <next>
-      <block type="robot_delay" id="193" inline="true">
+      <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="200">
+          <block type="math_number" id="3">
             <field name="NUM">2000</field>
           </block>
         </value>
         <next>
-          <block type="led_select" id="209" inline="true">
+          <block type="led_select" id="4" inline="true">
             <field name="ACTION">FLASH</field>
             <value name="LED">
-              <block type="multimedia_pollwav" id="243"></block>
+              <block type="math_number" id="5">
+                <field name="NUM">5000</field>
+              </block>
             </value>
             <next>
-              <block type="multimedia_volume" id="181">
-                <field name="VOLUME">HIGH</field>
+              <block type="oled_color" id="6">
+                <field name="OBJECT">GREEN</field>
                 <next>
-                  <block type="multimedia_playwav" id="250">
-                    <field name="WAV">beep</field>
+                  <block type="multimedia_volume" id="7">
+                    <field name="VOLUME">HIGH</field>
+                    <next>
+                      <block type="robot_delay" id="8" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="9">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="multimedia_playwav" id="10">
+                            <field name="WAV">beep</field>
+                            <next>
+                              <block type="robot_delay" id="11" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="12">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stutter" id="13">
+                                    <next>
+                                      <block type="robot_delay" id="14" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="15">
+                                            <field name="NUM">1000</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_stop" id="16"></block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
