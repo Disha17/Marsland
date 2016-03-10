@@ -1,24 +1,29 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_setmotors" id="107" inline="true" x="176" y="88">
-    <value name="BOTHMOVLEFT">
-      <block type="math_number" id="136">
-        <field name="NUM">95</field>
-      </block>
-    </value>
-    <value name="BOTHMOVRIGHT">
-      <block type="math_number" id="143">
-        <field name="NUM">100</field>
-      </block>
-    </value>
+  <block type="expansion_exp2power" id="169" x="180" y="214">
+    <field name="SERVO">ON</field>
     <next>
-      <block type="robot_delay" id="145" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="153">
-            <field name="NUM">1000</field>
+      <block type="movement_setmotors" id="107" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="136">
+            <field name="NUM">95</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="143">
+            <field name="NUM">100</field>
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="163"></block>
+          <block type="robot_delay" id="145" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="153">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="163"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
