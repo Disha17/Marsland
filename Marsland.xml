@@ -19,7 +19,7 @@
                 </value>
                 <next>
                   <block type="multimedia_playwav" id="7">
-                    <field name="WAV">lion2.wave</field>
+                    <field name="WAV">lion2wave</field>
                     <next>
                       <block type="robot_delay" id="8" inline="true">
                         <value name="DELAY">
